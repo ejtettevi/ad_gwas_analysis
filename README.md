@@ -2,11 +2,6 @@
 
 ## Overview
 
-This repository accompanies the study:
-
-**"Genome-Wide Association and Fine-Mapping Identify Major Genetic Contributors and Pathways in Alzheimer’s Disease"**  
-Edward Jenner Tettevi, Mike Y. Osei-Atweneboana, et al.
-
 This project delivers a comprehensive, reproducible pipeline for integrative genomic analysis of Alzheimer’s disease (AD). Leveraging large-scale, curated GWAS summary statistics, advanced statistical methodologies, and functional annotation, this resource enables the systematic identification and prioritization of genetic variants, genes, and pathways implicated in AD and related neurodegenerative traits.
 
 ---
@@ -123,43 +118,13 @@ pip install -r requirements.txt
 ### Running the Pipeline
 
 ```bash
-python main_pipeline.py --config config.yaml
+python 01_main_analysis_script.py
 ```
-
-- See `config.yaml` for customizable parameters (data paths, thresholds, etc.)
-- Supplementary scripts for figure/table reproduction are in the `scripts/` directory.
 
 ### Output
 
-- Results (tables, figures, logs) are saved to the `results/` and `figures/` directories.
-- Supplementary data and figures are in `supplementary/`.
-
----
-
-## Directory Structure
-
-```
-├── code/
-│   ├── main_pipeline.py
-│   ├── modules/
-│   └── utils/
-├── data/
-│   └── advp_curated_variants.tsv
-├── results/
-│   ├── summary_stats.csv
-│   └── fine_mapping/
-├── figures/
-│   └── manhattan_plot.png
-├── scripts/
-│   └── reproduce_figures.py
-├── supplementary/
-│   └── supplementary_figures.pdf
-├── config.yaml
-├── requirements.txt
-├── REFERENCES.md
-├── LICENSE
-└── README.md
-```
+- Results (tables and figures) saved in the results directory.
+- Supplementary data are in supplementary file.
 
 ---
 
@@ -169,12 +134,8 @@ python main_pipeline.py --config config.yaml
   Alzheimer’s Disease Variant Portal (ADVP) curated variant table (GRCh38/hg38)  
   [Kuksa et al., 2022](https://doi.org/10.3233/JAD-215055)
 
-- **Supplementary Data:**  
-  Additional processed data and intermediate results are available in the `data/` and `supplementary/` directories.
-
 - **Code:**  
-  All analysis code is included in this repository. For reproducibility, see the `code/` directory and [github.com/ejtettevi/ad_gwas_analysis.git](https://github.com/ejtettevi/ad_gwas_analysis.git).
-
+  All analysis code is included in this repository.
 ---
 
 ## Limitations & Future Work
@@ -187,35 +148,6 @@ python main_pipeline.py --config config.yaml
   Future releases will support integration with individual-level data and more sophisticated modeling (e.g., mixed linear models, PCA-based corrections).
 - **Community Contributions:**  
   Pull requests and issues for new features, bug fixes, or additional analyses are welcome.
-
----
-
-## References
-
-A comprehensive list of references is provided in [REFERENCES.md](REFERENCES.md).  
-Key references:
-
-- [Kuksa et al., 2022](https://doi.org/10.3233/JAD-215055) – ADVP: A Catalog of Genetic Findings for Alzheimer’s Disease
-- [Kunkle et al., 2019](https://doi.org/10.1038/s41588-019-0358-2) – Genetic meta-analysis of diagnosed Alzheimer’s disease
-- [Lambert et al., 2013](https://doi.org/10.1038/ng.2802) – Meta-analysis of susceptibility loci for AD
-- [Boyle et al., 2017](https://doi.org/10.1016/j.cell.2017.05.038) – Omnigenic model of complex traits
-- [Fang et al., 2023](https://doi.org/10.1093/bioinformatics/btac757) – GSEApy for gene set enrichment
-- See [REFERENCES.md](REFERENCES.md) for the full bibliography.
-
----
-
-## Contributors
-
-- **Edward Jenner Tettevi**  
-  - Department of Biochemistry, Cell and Molecular Biology, University of Ghana  
-  - West African Centre for Cell Biology of Infectious Pathogens  
-  - CSIR-Water Research Institute
-
-- **Mike Y. Osei-Atweneboana**  
-  - CSIR-College of Science and Technology  
-  - CSIR-Water Research Institute
-
-- For the full author list and affiliations, see the manuscript.
 
 ---
 
@@ -238,4 +170,4 @@ Special thanks to the funding agencies and institutional partners supporting thi
 Edward J. Tettevi  
 ejtettevi@gmail.com
 
-For questions, collaboration, or data/code requests, please contact the corresponding author.
+For questions, collaboration, please contact the corresponding author.
