@@ -149,7 +149,6 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for terms
 ## Acknowledgements
 
 We gratefully acknowledge the Alzheimer’s Disease Variant Portal (ADVP) team, all data contributors, and the open-source software community whose tools enabled this research.  
-Special thanks to the funding agencies and institutional partners supporting this work.
 
 ---
 
