@@ -2,7 +2,7 @@
 
 ## Overview
 
-<div style="text-align"> This project delivers a comprehensive, reproducible pipeline for integrative genomic analysis of Alzheimer’s disease (AD). Leveraging large-scale, curated GWAS summary statistics, advanced statistical methodologies, and functional annotation, this resource enables the systematic identification and prioritization of genetic variants, genes, and pathways implicated in AD and related neurodegenerative traits. </div>
+<div style="text-align:justify"> This project delivers a comprehensive, reproducible pipeline for integrative genomic analysis of Alzheimer’s disease (AD). Leveraging large-scale, curated GWAS summary statistics, advanced statistical methodologies, and functional annotation, this resource enables the systematic identification and prioritization of genetic variants, genes, and pathways implicated in AD and related neurodegenerative traits. </div>
 
 ---
 
